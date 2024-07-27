@@ -57,6 +57,267 @@ When you’re ready to explore what Excel has to offer, select Next!
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Summarizing Numeric Data
+--------------------------
+6 min
+Let’s start by exploring numeric data! In the learning environment, we’ve loaded a dataset containing the number of new cars produced in the US by year (from the Bureau of Transportation 
+Statistics). Often, exploring numeric data starts with answering basic statistical questions about the data such as
+
+	. what is the largest number of new cars in a year?
+
+	. what is the smallest number of new cars in a year?
+
+	. what is the average number of new cars in a year?
+
+Excel can help us answer all of these. But first, we’ll have to know a little more about how cells in a spreadsheet connect to each other. The connections between cells are based on cell 
+“addresses” or “references”.
+
+Cell addresses are made up of a column letter followed by a row number. For example, the cell containing the number 10 in the following image is named B2 since it is in column B and row 
+2. The number 10 is the content or value of the cell.rows A through C and columns 1 through 3 of Excel with cell B2 highlighted and containing the number 10
+
+In addition to numbers, cells can also contain formulas, which are how we’ll calculate our maximum, minimum, and average. A formula in Excel always starts with the = sign, so Excel knows 
+that it should do some kind of computation.
+
+For example, since B2 contains the number 10, the formula =2+B2 would produce the value 12, since 2+10 = 12. The cell name B2 gets replaced by its value when Excel does the computation.
+
+We can also do subtraction, division, and multiplication in formulas using
+
+	. - for subtraction
+
+	. / for division
+
+	. * for multiplication
+
+This last one might seem like an unusual symbol, but it is pretty commonly used for multiplication on computers.
+
+Here’s an example of using * for multiplication. What would you change if you wanted to multiply B2 by 3?
+
+rows A through C and columns 1 through 3 of Excel with cell B2 containing the number 10 and cell C2 containing the formula =2*B2rows A through C and columns 1 through 3 of Excel with cell 
+B2 containing the number 10 and cell C2 containing the number 20
+
+Now, you might be thinking to yourself that you could multiply 2 by 10 without a spreadsheet. That’s right! But the magic of Excel formulas is that they update automatically when data 
+changes. If the cell B2 was changed to contain the number 4, the cell C2 would automatically update to contain the number 8, since 2*4 = 8. These dynamic formulas are the real power of 
+Excel since they let us automatically update analyses with new data.
+
+* Ranges of Cells
+-----------------
+To calculate an average we need to reference a whole collection of cells instead of a single cell at a time. To reference a range of data, we type the name of the first cell in the range 
+(usually the top-left cell), a colon, and then the name of the last cell (usually the bottom-right cell).
+
+For example, the range B1:C4 includes the cells in Columns B-C and Rows 1-4.rows A through C and columns 1 through 8 of Excel with cell A1 containing the formula =B1:C4 and the cells 
+B1-B4 and C1 through C4 highlighted
+
+To calculate the maximum, minimum, and average of this range we use special Excel functions =MAX(), =MIN(), and =AVERAGE(), and we we put the range containing the data between the 
+parentheses.
+
+In the example in the learning environment, the data is contained in the range B2:B7, so the full formulas for calculating these three statistics are
+
+	. =MAX(B2:B7)
+
+	. =MIN(B2:B7)
+
+	. =AVERAGE(B2:B7)
+
+To display the average in cell B8, we
+
+	1. Select cell B8
+
+	2. Type the formula into the cell
+
+	3. Select return or enter
+
+You can watch the full process in the slideshow in the learning environment. When you are ready to practice this yourself, follow the next set of instructions!
+
+* Instructions
+--------------
+When you’re ready to practice what you’ve learned, download and work through our interactive exercise spreadsheet. A couple of important points to keep in mind:
+
+	. We’ve changed some of the default Excel formatting to make these easier to follow and more interactive. You’ll learn how to do formatting in later lessons.
+
+	. We’ve locked all cells except the ones we’re asking you to create formulas in. This is so we can automatically correct your answers and give you feedback without worrying that 
+	some data has been changed accidentally.
+
+	. If you are having technical issues with the Excel spreadsheets, check out this post in our forums for possible solutions!
+
+	. If you get stuck, feel free to download our solutions spreadsheet
+
+	. When you’re done with the exercises, come back here and answer the reflection question!
+
+Reflection question: when you restricted the range for the average, the average increased. Why do you think that happened, and when would you prefer to use one average over the other?
+
+* Check Answer
+--------------
+Restricting the range for the average removed the first five years, which had lower numbers of new SUVs overall. Removing these lower numbers increased the average. The larger average is 
+more reflective of current trends (since 2013, every year has had at least 1.5 million new SUVs produced.)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Transform Data
+----------------
+5 min
+The raw data we get often isn’t in precisely the form we would like to analyze. For example, our new vehicle data contains the number of new vehicles for each type of vehicle, but what if 
+we wanted to see each type as a percent of total new vehicles instead?
+
+We could calculate percentages one cell at a time using individual formulas, but this would result in a lot of time writing formulas instead of analyzing our data. Also, if we ever 
+decided to change our analysis slightly, we’d be stuck updating each formula individually again. Fortunately, Excel lets us move, or drag, formulas while automatically updating cell 
+references.
+
+Let’s take a look at what this means. Suppose the cell B2 contains the formula =A4. If we move this formula from B2 to D1, we moved the formula two columns to the right and one row up. 
+Excel then updated the formula from =A4 to =C3 following the same “path”: two columns to the right and one row up. A way to think of it is that Excel moved everything two steps over and 
+one step up.
+
+a screenshot of an Excel table with columns A-D and rows 1-4. Cell B2 has the formula =A4. There are arrows demonstrating this formula being moved three columns over and one row up, so 
+that cell D1 has formula C3.
+
+Sometimes, we won’t want the column or row to update. For example, let’s take a look at calculating the percentages of the new vehicle data in the next table.
+
+	A		B			C
+1	Vehicle type	# of new vehicles	Percentage
+2	car		1000	
+3	SUV		1500	
+4	truck		5000	
+5	TOTAL:		7500	
+
+We can calculate the first percentage in C by dividing the number of new cars by the total number of new vehicles. In Excel, we would type the formula = B2/B5 in the cell C2.
+
+	A		B			C
+1	Vehicle type	# of new vehicles	Percentage
+2	car		1000			=B2/B5
+3	SUV		1500	
+4	truck		5000	
+5	TOTAL:		7500	
+
+
+What happens when we move this formula to the cell C3? The column stayed the same, and the row moved one cell down. Excel will update the references in the formula =B2/B5 to follow the 
+same path:
+
+	. B2 becomes B3
+
+	. B5 becomes B6
+
+Now the cell C3 will have the formula =B3/B6.
+
+	A		B			C
+1	Vehicle type	# of new vehicles	Percentage
+2	car		1000			=B2/B5
+3	SUV		1500			=B3/B6
+4	truck		5000	
+5	TOTAL:		7500	
+
+This isn’t what we want to calculate! The formula =B3/B6 takes the number of new SUVs in B3 and divides it by whatever is in cell B6, not by the total which is in cell B5.
+
+We want Excel to update the reference B2 to B3, so that we’re calculating the SUV percentage. But we don’t want Excel to update the reference to B5, since the total stays the same no 
+matter which vehicle type we’re working with.
+
+To stop Excel from updating this row, we need to place a $ before the original row reference. The first formula in C2 becomes =B2/B$5. When we move it down to C3 it updates to =B3/B$5. 
+This takes the number of new SUVs and divides it by the total, which is what we want to do!
+
+	A		B			C
+1	Vehicle type	# of new vehicles	Percentage
+2	car		1000			=B2/B$5
+3	SUV		1500			=B3/B$5
+4	truck		5000	
+5	TOTAL:		7500
+	
+Note that if we wanted to stop the column from updating instead of the row, we would need to put the $ sign in front of the column letter in the formula instead of the row number.
+
+* Errors and Best Practices
+---------------------------
+Forgetting to use a $ when necessary sometimes results in an Excel error. These errors are displayed in the cell containing the reference.
+
+The two most common errors are #DIV/0! and #VALUE!. Let’s look at how these could occur in our example, where Excel updated the percentage formula to =B3/B6, pointing to a cell B6 that 
+isn’t in our table.
+
+The #DIV/0! error indicates that Excel is trying to divide by 0. This could happen because the cell B6 contains a 0 or, more likely, because the cell B6 is empty. Excel assumes that empty 
+cells are the same as 0.
+
+The #VALUE! error likely indicates that the cell B6 contains some non-numeric value that Excel cannot use in the mathematical formula =B3/B6.
+
+Even if no errors appear, our cell references might still be updating in a way we don’t want. If there was a nonzero number in cell B6, Excel would calculate =B3/B6 without an error. 
+Unless we’re careful, we could use the wrong number in our analysis without realizing it.
+
+In general, it is always good practice to audit every formula we intend to move, looking at every cell referenced to ask:
+
+	1. Should the row of this reference update when moved up/down?
+
+	2. Should the column of this reference update when moved left/right?
+
+The learning environment has a slideshow illustrating each step of creating and moving a formula in Excel. You can advance the slides using the controls at the bottom. Once you feel ready 
+to do this yourself, move on to the next set of instructions!
+
+* Instructions
+--------------
+When you’re ready to practice what you’ve learned, download and work through our interactive exercise spreadsheet. A couple of important points to keep in mind:
+
+	. We’ve changed some of the default Excel formatting to make these easier to follow and more interactive. You’ll learn how to do formatting in later lessons.
+
+	. We’ve locked all cells except the ones we’re asking you to create formulas in. This is so we can automatically correct your answers and give you feedback without worrying that 
+	some data has been changed accidentally.
+
+	. If you get stuck, feel free to download our solutions spreadsheet to compare your work to ours!
+
+	. When you’re done with the exercises, come back here and answer the reflection question!
+
+Question: how do new cars produced in 2019 compare to the other varieties, given what you calculated in the range I27:I31?
+
+* Check Our Answer
+------------------
+New cars are at only 67% of their 2015 production level, whiles new vans are at 85% and all other vehicle types are over 100% of their 2015 levels.
+
+We have to be careful, however, because we are comparing each type to its own 2015 baseline. For example, while pickup trucks in 2019 are at 140% of their 2015 level, there are still only 
+about half as many pickup trucks being produced as there are cars.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
