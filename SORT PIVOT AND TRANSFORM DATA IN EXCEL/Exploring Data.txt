@@ -1,0 +1,108 @@
+# EXPLORING DATA
+----------------
+
+* Introduction to Exploring Data
+--------------------------------
+1 min
+Excel lets us store, organize, and analyze our data all in the same place. This makes Excel a great one-stop-shop for exploring a dataset prior to performing a formal analysis. In this 
+lesson, we’ll cover three standard Excel methods for data exploration:
+
+	. calculating averages and other statistics using formulas
+
+	. organizing data using sorting
+
+	. zooming in on the data we care about by filtering
+
+Each exercise in this lesson will come with an interactive Excel spreadsheet for you to download. The spreadsheet will give you instructions to practice what you’ve learned, provide 
+hints, and give feedback on your answers.
+
+Even old hands at Excel sometimes get stuck on seemingly “simple” tasks, so if you get stuck, please consult the solutions or ask a question in the forums, even if you think you “should” 
+be able to do it.
+
+* Instructions
+--------------
+Select “next” when you’re ready to start exploring data!
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Introduction to Excel
+-----------------------
+1 min
+Let’s start by taking a tour of the Excel interface! When you first open up Excel, the sheer number of features can be a little overwhelming. But once you understand the structure behind 
+Excel’s layout, you can find the features you need and put the flexibility of Excel to use.
+
+Excel is structured around two basic purposes:
+
+	1. Storing data and analyses of data
+
+	2. Performing analyses of data
+
+Let’s walk through the schematic of Excel in the learning environment to the right. At the bottom of the schematic are tabs corresponding to three sheets named Sheet1, Sheet2, and Sheet3.
+
+The actual sheets appear above the tabs with the sheet names. The sheets are where Excel stores data tables and the results of data analysis, like charts or calculations. The data 
+analysis tools themselves are stored above the sheets.
+
+The formula bar is directly above the sheets. This is where you can view and edit any calculations you are using in your analysis.
+
+The area above the formula bar displays different analytics options depending on which tab is open. In the schematic, the Home tab is open and the Insert and Data tabs are closed. Each 
+icon on a tab is connected to some analytics function like sorting a table or creating a chart.
+
+Depending on your version of Excel, icons may appear differently, but they should always be in the same location. We’ll give you directions in each exercise to find the tools you need!
+
+* Instructions
+--------------
+When you’re ready to explore what Excel has to offer, select Next!
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
