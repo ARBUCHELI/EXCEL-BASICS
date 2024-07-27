@@ -271,6 +271,84 @@ about half as many pickup trucks being produced as there are cars.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Sorting Data
+--------------
+4 min
+Since Excel is often used to store and display data, we can scroll to explore, too. If the data is randomly arranged, it’s hard to get any insight by just scrolling. But if the data is 
+organized in a predictable way, we might be able to spot patterns that can guide our more formal analysis later on.
+
+For example, look at the tornado data in the learning environment (from the National Weather Service). Notice that it is unsorted and difficult to make sense of. Once it is sorted, 
+however, we can see all tornado measurements for each state together. This makes it much easier to visually inspect.
+
+To sort a table of data in Excel by one of its columns, select a cell containing data for that column and then choose an order for sorting from the Sort & Filter menu on the Home tab.
+
+For example, here’s how we would sort this tornado data alphabetically by state:An image of the Sort menu in Excle
+
+This method would result in a table starting with the tornados in Florida, since F comes before M and O alphabetically.
+
+The option to sort A to Z or Z to A will only be displayed for text-based data. For numeric and time data, the options are Sort Smallest to Largest; or dates, Sort Oldest to Newest and 
+vice versa. Sometimes, Excel might interpret the data type incorrectly and display the wrong option. We’ll show you how to fix that in a later lesson.
+
+Often, we want to sort by more than one column. For example, we might want to organize our tornado data so that all the tornados in each state are grouped together and only then sorted by 
+date. The natural thing to try would be to sort by state and then sort by date. But, in case this wasn’t already complicated enough, we actually need to use the reverse order.
+
+This might seem unintuitive, but let’s look at a small example to see why this happens. Consider the following table:
+
+Date	State
+1/4/20	FL
+2/5/20	AL
+1/31/20	FL
+1/11/20	AL
+2/6/20	FL
+
+If we sort newest-to-oldest by date, we’ll get the table rearranged by date:
+
+Date	State
+2/6/20	FL
+2/5/20	AL
+1/31/20	FL
+1/11/20	AL
+1/4/20	FL
+
+When we sort by state next, AL will come before FL. But which of the two AL rows will be first?
+
+The way Excel deals with cells that have the same value is by maintaining the order they were already in. Since we’ve already sorted by date from newest to oldest, the 2/5/20 row for AL 
+will come before the 1/11/20 row. Here’s what the whole sorted table looks like:
+
+Date	State
+2/5/20	AL
+1/11/20	AL
+2/6/20	FL
+1/31/20	FL
+1/4/20	FL
+
+In the learning environment, we’ve shown what happens if you sort a portion of this tornado dataset by time, and then by date, and then by state. When you’re ready to try this yourself, 
+move on to the next set of instructions.
+
+* Instructions
+--------------
+When you’re ready to practice what you’ve learned, download and work through our interactive exercise spreadsheet.
+
+To allow you to sort freely, we’ve unlocked all cells of this spreadsheet. This is a great opportunity to practice Excel hygiene: do your best to only edit the cells indicated. If you 
+think you might have accidentally erased some data, feel free to re-download the spreadsheet to start fresh!
+
+If you get stuck, feel free to download our solutions spreadsheet.
+
+Once you’ve finished, think about the next question.
+
+Question: could we use sorting to figure out how many tornados occurred on a given date?
+
+* Check Our Answer
+------------------
+Unfortunately, we can't. While sorting the data by date will group entries by date, we don't know for sure if different rows of this dataset correspond to different tornados. Even rows 
+with different states or different times might correspond to the same tornado that has moved or grown. It is always important to not only think about the tools we have to analyze 
+datasets, but also what limitations the dataset might impose.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
