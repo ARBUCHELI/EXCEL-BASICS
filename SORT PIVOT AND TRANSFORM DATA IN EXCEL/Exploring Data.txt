@@ -347,6 +347,66 @@ datasets, but also what limitations the dataset might impose.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Filter Data
+-------------
+Sorting is excellent for organizing data, but finding specific data in a sorted table can still take a lot of scrolling. To answer questions about data with specific features, we’re 
+better off using filters.
+
+Filtering a table consists of comparing each row of data to a list of criteria. Only those rows that match the criteria are included in the filtered table. For example, we could filter 
+the tornado dataset by the following criteria:
+
+	. state = AR
+
+	. date is before 5/1/20
+
+Applying this filter would result in a table of only those tornados in Arkansas before May 1st.
+
+Sorting and filtering are often used together. For example, if we’re interested in the length of tornados in Arkansas before May, we could take our filtered dataset and sort by length to 
+see the longest and shortest tornados.
+
+Let’s look at an example of taking a question about data and breaking it down into filters. For example, let’s imagine we’ve been asked to find out when the 2020 tornado season started in 
+California (CA).
+
+To break this question down, we start by identifying which columns of the dataset are being restricted. Since we’re asked to find out when the tornado season started, this question will 
+require some manipulation of the Date column. Since we’re asked specifically about California, we’ll also need to work with the State column.
+
+Since the other columns aren’t mentioned in the question, we won’t need to filter or sort by them at all.
+
+For the date, we’re not asked to find a specific date, just to find the start, which will be the first date. This means we will want to sort the Date column from oldest to newest 
+(further in the past to most recent).
+
+For the state, we’re given a specific value we want that column to have. For a tornado to be in California, it has to have CA in the state column.
+
+To get the answer to this question we’ll
+
+	. filter by state = CA
+
+	. sort Date from oldest to newest
+
+The answer will be the date in the first row of this filtered and sorted table. We’ve put a walkthrough of applying these filters in the learning environment. Note that we’re only showing 
+a portion of the tornado data so you can see what happens. Follow along and see how the table changes with each step.
+
+* Instructions
+--------------
+When you’re ready to practice what you’ve learned, download and work through our interactive exercise spreadsheet.
+
+To allow you to filter the data freely, we’ve unlocked all cells of this spreadsheet. This is a great opportunity to practice Excel hygiene: do your best to only edit the cells indicated. 
+If you think you might have accidentally erased some data, feel free to re-download the spreadsheet to start fresh!
+
+If you get stuck, feel free to download our solutions spreadsheet to compare your work with ours!
+
+Once you’ve finished, think about the next question.
+
+Question: What happens if you use a formula to calculate the average of a range, and then apply a filter that removes most of the values in that range?
+
+* Check Our Answer
+------------------
+All a filter does is *hide* values that don't match the filter criteria. The formula for computing the average is still referencing the entire range, and so will continue to calculate the 
+same number as before.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
