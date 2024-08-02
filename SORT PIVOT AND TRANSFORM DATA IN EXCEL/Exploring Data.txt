@@ -407,6 +407,34 @@ same number as before.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Let's Review
+--------------
+<1 min
+In this lesson, you’ve learned how to explore datasets in Excel using three key methods:
+
+	. formulas to summarize and transform data
+
+	. sorting to organize data for visual inspection
+
+	. filtering to zoom in on data points with specified features
+
+Specifically, you’ve learned how to
+
+	. use built-in Excel functions to find out the average, maximum, and sum of a set of numbers
+
+	. use draggable cell references and formulas to determine percents and baseline comparisons from raw data
+
+	. use sorting on multiple columns to gain insight into trends over time
+
+	. use filtering to answer questions about datapoints matching specific criteria
+
+These are the essential skills you need to explore data in Excel and prepare for formal analysis. Congratulations on completing the lesson!
+
+* Instructions
+--------------
+When you’re ready to take your Excel skills to the next level, select Up Next!
+
+
 
 
 
