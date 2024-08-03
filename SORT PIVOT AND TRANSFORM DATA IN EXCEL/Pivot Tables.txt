@@ -1,0 +1,27 @@
+# PIVOT TABLES
+--------------
+
+* Introduction to Pivot Tables
+------------------------------
+<1 min
+Formulas, filtering, and sorting are powerful tools! But combining them to answer complex data questions can be tricky. Excel solves this problem for many common data questions through 
+the PivotTable tool.
+
+In this lesson you’ll learn how to take a question about data and
+
+	. Determine if a pivot table is appropriate
+
+	. Translate the question into pivot table settings
+
+	. Create the pivot table in Excel
+
+	. Update the pivot table with new data
+
+* Instructions
+--------------
+Ready to pivot to learning about pivot tables? Click Next!
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
