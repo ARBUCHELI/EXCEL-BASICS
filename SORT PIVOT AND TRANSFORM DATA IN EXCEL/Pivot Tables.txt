@@ -134,3 +134,149 @@ rule.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* What is a Pivot Table
+-----------------------
+5 min
+Pivot tables won’t help you get your furniture through a door (unfortunately). They will help you group and summarize your data. Let’s look at an example of how powerful this can be.
+
+Suppose we’re trying to calculate the total dollars lost to tornados in each state by month. Let’s use the small example table below.
+
+		Year	Month		Losses ($)	Length (mi)	State
+		----	-----		----------	-----------	-----
+	1	2020	March		5,000		.4		TX
+	2	2020	February	10,000		1.5		FL
+	3	2020	January		50,000		.8		AZ
+	4	2020	February	25,000		.9		FL
+	5	2020	January		30,000		1		AZ
+	6	2020	January		1,000		1.2		TX
+
+We could answer this question by hand in three steps:
+
+	1. Group together all rows with the same state and month.
+
+	2. Collect the Losses values for all the rows in each group.
+
+	3. Sum the Losses for each group to report the total losses by group.
+
+A pivot table is a separate table collecting the results of this process. That might sound a bit abstract, so let’s go through this step-by-step.
+
+We start by creating a table of all the possible Month and State groups.
+
+First, we use the values of the State column as column headers for the pivot table. Note that we don’t repeat values. Even though AZ appears twice in the state column, it only appears 
+once in the headers of our new table.
+
+	AZ	FL	TX
+
+Second, we use the values of the Month column to label the rows of the new table. Once again, each month will only appear once.
+
+		AZ	FL	TX
+	January			
+	February			
+	March			
+
+The cells of this table correspond to the groups we need to form to answer the original question. Now, we need to gather and summarize the values in each group to fill in the 
+corresponding cell.
+
+For example, the upper-left cell of the new table is in the row January and the column AZ. When we look back at the original table, there are two rows in this group. To report the total 
+losses, we collect the Losses values for those rows and add them up: 50,000+30,000 = 80,000.
+
+			AZ		FL	TX
+	January		80,000		
+	February			
+	March			
+
+If we move one cell down, we’ll be in the row February and column AZ. There are no rows of the original table corresponding to this group. We leave this cell blank, to tell someone 
+reading the table that there were no rows of data in this group.
+
+Here’s the final pivot table — do you agree with the rest of our calculations?
+
+			AZ		FL		TX
+	January		80,000				1,000
+	February			35,000	
+	March						5,000
+
+This process is the same for any pivot table. Starting with a table of data, you pick
+
+	. column labels: a column or columns of the original table to serve as column labels (or headers) for the pivot table
+
+	. row labels: a column or columns of the original table to serve as row labels for the pivot table
+
+	. cell values: a column or columns of the original table to provide the values for the cells of the pivot table
+
+	. summary method: a method for taking multiple values corresponding to a single group and producing one value for the pivot table
+
+In our initial example, we picked
+
+	. column labels: State
+
+	. row labels: Month
+
+	. cell values: Losses
+
+	. summary method: sum (or total)
+
+* Instructions
+--------------
+You have a table of data from a pet adoption agency. The columns in the table are Species, Age, Weight, and Date adopted. The adoption agency has asked you to calculate the average weight 
+of a pet by species and age.
+
+How would you set up a pivot table to answer this question? That is, what would you pick for
+
+	. column labels:
+
+	. row labels:
+
+	. cell values:
+
+	. summary method
+
+* Check Answer
+--------------
+	. column labels: Age
+
+	. row labels: Species
+
+	. cell values: Weight
+
+	. summary method: average
+
+Note that it is also correct to swap Age and Species. Typically, if one category is numeric and the other isn't, the non-numeric category is set as the row labels. But that is not a hard 
+rule.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
